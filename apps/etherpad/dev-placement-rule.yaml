@@ -4,9 +4,6 @@ metadata:
   name: dev-clusters
   namespace: etherpad
 spec:
-  clusterConditions:
-    - type: ManagedClusterConditionAvailable
-      status: "True"
   clusterSelector:
     matchLabels:
-      env: dev
+      environment: dev
